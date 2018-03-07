@@ -8,6 +8,8 @@
 
 #import "NSArray+YRJArray.h"
 
+#import "NSData+YRJData.h"
+
 @implementation NSArray (YRJArray)
 
 + (instancetype)yrj_initSafeArrayWithObject:(id)object {
@@ -95,7 +97,7 @@
 
 - (NSString *)yrj_plistString {
     NSData *xmlData = [NSPropertyListSerialization dataWithPropertyList:self format:NSPropertyListXMLFormat_v1_0 options:kNilOptions error:NULL];
-    if (xmlData) return xmlData.utf8String;
+    if (xmlData) return xmlData.yrj_utf8String;
     return nil;
 }
 

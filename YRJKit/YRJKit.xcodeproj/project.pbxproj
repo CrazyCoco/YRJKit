@@ -13,21 +13,23 @@
 		3C53A979204F99970004D332 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C53A978204F99970004D332 /* Assets.xcassets */; };
 		3C53A97C204F99970004D332 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C53A97A204F99970004D332 /* LaunchScreen.storyboard */; };
 		3C53A97F204F99970004D332 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A97E204F99970004D332 /* main.m */; };
-		3C53A988204F9A310004D332 /* NSArray+YRJArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A987204F9A310004D332 /* NSArray+YRJArray.m */; };
-		3C53A98B204FB1A50004D332 /* NSAttributedString+YRJAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A98A204FB1A50004D332 /* NSAttributedString+YRJAttributedString.m */; };
-		3C53A98E204FB2570004D332 /* NSData+YRJData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A98D204FB2570004D332 /* NSData+YRJData.m */; };
-		3C53A991204FB26A0004D332 /* NSDate+YRJDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A990204FB26A0004D332 /* NSDate+YRJDate.m */; };
-		3C53A994204FB27C0004D332 /* NSString+YRJString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A993204FB27C0004D332 /* NSString+YRJString.m */; };
-		3C53A997204FB28F0004D332 /* NSDictionary+YRJDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A996204FB28F0004D332 /* NSDictionary+YRJDictionary.m */; };
-		3C53A99A204FB2B80004D332 /* NSFileManager+YRJFilrManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A999204FB2B80004D332 /* NSFileManager+YRJFilrManager.m */; };
-		3C53A99D204FB2D90004D332 /* NSObject+YRJObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A99C204FB2D90004D332 /* NSObject+YRJObject.m */; };
-		3C53A9A0204FB2EE0004D332 /* NSNumber+YRJNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A99F204FB2EE0004D332 /* NSNumber+YRJNumber.m */; };
-		3C53A9A3204FB2FF0004D332 /* NSTimer+YRJTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9A2204FB2FF0004D332 /* NSTimer+YRJTimer.m */; };
-		3C53A9A6204FB31A0004D332 /* NSMutableArray+YRJMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9A5204FB31A0004D332 /* NSMutableArray+YRJMutableArray.m */; };
-		3C53A9A9204FB32A0004D332 /* NSBundle+YRJBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9A8204FB32A0004D332 /* NSBundle+YRJBundle.m */; };
-		3C53A9AC204FB3470004D332 /* NSMutableDictionary+YRJMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9AB204FB3470004D332 /* NSMutableDictionary+YRJMutableDictionary.m */; };
-		3C53A9AF204FB3670004D332 /* NSMutableString+YRJMutableString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9AE204FB3670004D332 /* NSMutableString+YRJMutableString.m */; };
-		3C53A9B2204FB39A0004D332 /* NSURL+YRJUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9B1204FB39A0004D332 /* NSURL+YRJUrl.m */; };
+		3C53A9DE204FCC430004D332 /* NSObject+YRJObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9BA204FCC420004D332 /* NSObject+YRJObject.m */; };
+		3C53A9DF204FCC430004D332 /* NSFileManager+YRJFilrManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9BF204FCC430004D332 /* NSFileManager+YRJFilrManager.m */; };
+		3C53A9E0204FCC430004D332 /* NSTimer+YRJTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9C0204FCC430004D332 /* NSTimer+YRJTimer.m */; };
+		3C53A9E1204FCC430004D332 /* NSBundle+YRJBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9C1204FCC430004D332 /* NSBundle+YRJBundle.m */; };
+		3C53A9E2204FCC430004D332 /* NSMutableAttributedString+YRJMutableAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9C8204FCC430004D332 /* NSMutableAttributedString+YRJMutableAttributedString.m */; };
+		3C53A9E3204FCC430004D332 /* NSMutableArray+YRJMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9CA204FCC430004D332 /* NSMutableArray+YRJMutableArray.m */; };
+		3C53A9E4204FCC430004D332 /* NSString+YRJString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9CD204FCC430004D332 /* NSString+YRJString.m */; };
+		3C53A9E5204FCC430004D332 /* NSData+YRJData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9CE204FCC430004D332 /* NSData+YRJData.m */; };
+		3C53A9E6204FCC430004D332 /* NSAttributedString+YRJAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9D2204FCC430004D332 /* NSAttributedString+YRJAttributedString.m */; };
+		3C53A9E8204FCC430004D332 /* NSNumber+YRJNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9D5204FCC430004D332 /* NSNumber+YRJNumber.m */; };
+		3C53A9E9204FCC430004D332 /* NSArray+YRJArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9D6204FCC430004D332 /* NSArray+YRJArray.m */; };
+		3C53A9EA204FCC430004D332 /* NSMutableDictionary+YRJMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9D8204FCC430004D332 /* NSMutableDictionary+YRJMutableDictionary.m */; };
+		3C53A9EB204FCC430004D332 /* NSDictionary+YRJDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9D9204FCC430004D332 /* NSDictionary+YRJDictionary.m */; };
+		3C53A9EC204FCC430004D332 /* NSDate+YRJDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9DC204FCC430004D332 /* NSDate+YRJDate.m */; };
+		3C53A9ED204FCC430004D332 /* NSURL+YRJUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9DD204FCC430004D332 /* NSURL+YRJUrl.m */; };
+		3C53A9F0204FD7F30004D332 /* UIView+YRJView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9EF204FD7F30004D332 /* UIView+YRJView.m */; };
+		3C53A9F6204FDF2D0004D332 /* UIImage+YRJImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9F5204FDF2D0004D332 /* UIImage+YRJImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,36 +43,42 @@
 		3C53A97B204F99970004D332 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C53A97D204F99970004D332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C53A97E204F99970004D332 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3C53A986204F9A310004D332 /* NSArray+YRJArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+YRJArray.h"; sourceTree = "<group>"; };
-		3C53A987204F9A310004D332 /* NSArray+YRJArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+YRJArray.m"; sourceTree = "<group>"; };
-		3C53A989204FB1A50004D332 /* NSAttributedString+YRJAttributedString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+YRJAttributedString.h"; sourceTree = "<group>"; };
-		3C53A98A204FB1A50004D332 /* NSAttributedString+YRJAttributedString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+YRJAttributedString.m"; sourceTree = "<group>"; };
-		3C53A98C204FB2570004D332 /* NSData+YRJData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+YRJData.h"; sourceTree = "<group>"; };
-		3C53A98D204FB2570004D332 /* NSData+YRJData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+YRJData.m"; sourceTree = "<group>"; };
-		3C53A98F204FB26A0004D332 /* NSDate+YRJDate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+YRJDate.h"; sourceTree = "<group>"; };
-		3C53A990204FB26A0004D332 /* NSDate+YRJDate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+YRJDate.m"; sourceTree = "<group>"; };
-		3C53A992204FB27C0004D332 /* NSString+YRJString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+YRJString.h"; sourceTree = "<group>"; };
-		3C53A993204FB27C0004D332 /* NSString+YRJString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+YRJString.m"; sourceTree = "<group>"; };
-		3C53A995204FB28F0004D332 /* NSDictionary+YRJDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+YRJDictionary.h"; sourceTree = "<group>"; };
-		3C53A996204FB28F0004D332 /* NSDictionary+YRJDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+YRJDictionary.m"; sourceTree = "<group>"; };
-		3C53A998204FB2B80004D332 /* NSFileManager+YRJFilrManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+YRJFilrManager.h"; sourceTree = "<group>"; };
-		3C53A999204FB2B80004D332 /* NSFileManager+YRJFilrManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+YRJFilrManager.m"; sourceTree = "<group>"; };
-		3C53A99B204FB2D90004D332 /* NSObject+YRJObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+YRJObject.h"; sourceTree = "<group>"; };
-		3C53A99C204FB2D90004D332 /* NSObject+YRJObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YRJObject.m"; sourceTree = "<group>"; };
-		3C53A99E204FB2EE0004D332 /* NSNumber+YRJNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+YRJNumber.h"; sourceTree = "<group>"; };
-		3C53A99F204FB2EE0004D332 /* NSNumber+YRJNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+YRJNumber.m"; sourceTree = "<group>"; };
-		3C53A9A1204FB2FF0004D332 /* NSTimer+YRJTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+YRJTimer.h"; sourceTree = "<group>"; };
-		3C53A9A2204FB2FF0004D332 /* NSTimer+YRJTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+YRJTimer.m"; sourceTree = "<group>"; };
-		3C53A9A4204FB31A0004D332 /* NSMutableArray+YRJMutableArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+YRJMutableArray.h"; sourceTree = "<group>"; };
-		3C53A9A5204FB31A0004D332 /* NSMutableArray+YRJMutableArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+YRJMutableArray.m"; sourceTree = "<group>"; };
-		3C53A9A7204FB32A0004D332 /* NSBundle+YRJBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+YRJBundle.h"; sourceTree = "<group>"; };
-		3C53A9A8204FB32A0004D332 /* NSBundle+YRJBundle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+YRJBundle.m"; sourceTree = "<group>"; };
-		3C53A9AA204FB3470004D332 /* NSMutableDictionary+YRJMutableDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+YRJMutableDictionary.h"; sourceTree = "<group>"; };
-		3C53A9AB204FB3470004D332 /* NSMutableDictionary+YRJMutableDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+YRJMutableDictionary.m"; sourceTree = "<group>"; };
-		3C53A9AD204FB3670004D332 /* NSMutableString+YRJMutableString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+YRJMutableString.h"; sourceTree = "<group>"; };
-		3C53A9AE204FB3670004D332 /* NSMutableString+YRJMutableString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+YRJMutableString.m"; sourceTree = "<group>"; };
-		3C53A9B0204FB39A0004D332 /* NSURL+YRJUrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+YRJUrl.h"; sourceTree = "<group>"; };
-		3C53A9B1204FB39A0004D332 /* NSURL+YRJUrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+YRJUrl.m"; sourceTree = "<group>"; };
+		3C53A9BA204FCC420004D332 /* NSObject+YRJObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YRJObject.m"; sourceTree = "<group>"; };
+		3C53A9BB204FCC420004D332 /* YRJDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRJDefine.h; sourceTree = "<group>"; };
+		3C53A9BC204FCC420004D332 /* YRJKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRJKit.h; sourceTree = "<group>"; };
+		3C53A9BD204FCC420004D332 /* NSObject+YRJObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YRJObject.h"; sourceTree = "<group>"; };
+		3C53A9BF204FCC430004D332 /* NSFileManager+YRJFilrManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+YRJFilrManager.m"; sourceTree = "<group>"; };
+		3C53A9C0204FCC430004D332 /* NSTimer+YRJTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+YRJTimer.m"; sourceTree = "<group>"; };
+		3C53A9C1204FCC430004D332 /* NSBundle+YRJBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+YRJBundle.m"; sourceTree = "<group>"; };
+		3C53A9C2204FCC430004D332 /* NSFileManager+YRJFilrManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+YRJFilrManager.h"; sourceTree = "<group>"; };
+		3C53A9C3204FCC430004D332 /* NSBundle+YRJBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+YRJBundle.h"; sourceTree = "<group>"; };
+		3C53A9C4204FCC430004D332 /* NSTimer+YRJTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+YRJTimer.h"; sourceTree = "<group>"; };
+		3C53A9C6204FCC430004D332 /* NSNumber+YRJNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+YRJNumber.h"; sourceTree = "<group>"; };
+		3C53A9C8204FCC430004D332 /* NSMutableAttributedString+YRJMutableAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+YRJMutableAttributedString.m"; sourceTree = "<group>"; };
+		3C53A9C9204FCC430004D332 /* NSAttributedString+YRJAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+YRJAttributedString.h"; sourceTree = "<group>"; };
+		3C53A9CA204FCC430004D332 /* NSMutableArray+YRJMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+YRJMutableArray.m"; sourceTree = "<group>"; };
+		3C53A9CB204FCC430004D332 /* NSMutableDictionary+YRJMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+YRJMutableDictionary.h"; sourceTree = "<group>"; };
+		3C53A9CC204FCC430004D332 /* NSArray+YRJArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+YRJArray.h"; sourceTree = "<group>"; };
+		3C53A9CD204FCC430004D332 /* NSString+YRJString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YRJString.m"; sourceTree = "<group>"; };
+		3C53A9CE204FCC430004D332 /* NSData+YRJData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+YRJData.m"; sourceTree = "<group>"; };
+		3C53A9CF204FCC430004D332 /* NSDictionary+YRJDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+YRJDictionary.h"; sourceTree = "<group>"; };
+		3C53A9D0204FCC430004D332 /* NSURL+YRJUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+YRJUrl.h"; sourceTree = "<group>"; };
+		3C53A9D1204FCC430004D332 /* NSDate+YRJDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+YRJDate.h"; sourceTree = "<group>"; };
+		3C53A9D2204FCC430004D332 /* NSAttributedString+YRJAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+YRJAttributedString.m"; sourceTree = "<group>"; };
+		3C53A9D4204FCC430004D332 /* NSMutableAttributedString+YRJMutableAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+YRJMutableAttributedString.h"; sourceTree = "<group>"; };
+		3C53A9D5204FCC430004D332 /* NSNumber+YRJNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+YRJNumber.m"; sourceTree = "<group>"; };
+		3C53A9D6204FCC430004D332 /* NSArray+YRJArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+YRJArray.m"; sourceTree = "<group>"; };
+		3C53A9D7204FCC430004D332 /* NSMutableArray+YRJMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+YRJMutableArray.h"; sourceTree = "<group>"; };
+		3C53A9D8204FCC430004D332 /* NSMutableDictionary+YRJMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+YRJMutableDictionary.m"; sourceTree = "<group>"; };
+		3C53A9D9204FCC430004D332 /* NSDictionary+YRJDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+YRJDictionary.m"; sourceTree = "<group>"; };
+		3C53A9DA204FCC430004D332 /* NSData+YRJData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+YRJData.h"; sourceTree = "<group>"; };
+		3C53A9DB204FCC430004D332 /* NSString+YRJString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YRJString.h"; sourceTree = "<group>"; };
+		3C53A9DC204FCC430004D332 /* NSDate+YRJDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+YRJDate.m"; sourceTree = "<group>"; };
+		3C53A9DD204FCC430004D332 /* NSURL+YRJUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+YRJUrl.m"; sourceTree = "<group>"; };
+		3C53A9EE204FD7F30004D332 /* UIView+YRJView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+YRJView.h"; sourceTree = "<group>"; };
+		3C53A9EF204FD7F30004D332 /* UIView+YRJView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+YRJView.m"; sourceTree = "<group>"; };
+		3C53A9F4204FDF2D0004D332 /* UIImage+YRJImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+YRJImage.h"; sourceTree = "<group>"; };
+		3C53A9F5204FDF2D0004D332 /* UIImage+YRJImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YRJImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,38 +128,76 @@
 		3C53A985204F99E30004D332 /* YRJKit */ = {
 			isa = PBXGroup;
 			children = (
-				3C53A986204F9A310004D332 /* NSArray+YRJArray.h */,
-				3C53A987204F9A310004D332 /* NSArray+YRJArray.m */,
-				3C53A989204FB1A50004D332 /* NSAttributedString+YRJAttributedString.h */,
-				3C53A98A204FB1A50004D332 /* NSAttributedString+YRJAttributedString.m */,
-				3C53A98C204FB2570004D332 /* NSData+YRJData.h */,
-				3C53A98D204FB2570004D332 /* NSData+YRJData.m */,
-				3C53A98F204FB26A0004D332 /* NSDate+YRJDate.h */,
-				3C53A990204FB26A0004D332 /* NSDate+YRJDate.m */,
-				3C53A992204FB27C0004D332 /* NSString+YRJString.h */,
-				3C53A993204FB27C0004D332 /* NSString+YRJString.m */,
-				3C53A995204FB28F0004D332 /* NSDictionary+YRJDictionary.h */,
-				3C53A996204FB28F0004D332 /* NSDictionary+YRJDictionary.m */,
-				3C53A998204FB2B80004D332 /* NSFileManager+YRJFilrManager.h */,
-				3C53A999204FB2B80004D332 /* NSFileManager+YRJFilrManager.m */,
-				3C53A99B204FB2D90004D332 /* NSObject+YRJObject.h */,
-				3C53A99C204FB2D90004D332 /* NSObject+YRJObject.m */,
-				3C53A99E204FB2EE0004D332 /* NSNumber+YRJNumber.h */,
-				3C53A99F204FB2EE0004D332 /* NSNumber+YRJNumber.m */,
-				3C53A9A1204FB2FF0004D332 /* NSTimer+YRJTimer.h */,
-				3C53A9A2204FB2FF0004D332 /* NSTimer+YRJTimer.m */,
-				3C53A9A4204FB31A0004D332 /* NSMutableArray+YRJMutableArray.h */,
-				3C53A9A5204FB31A0004D332 /* NSMutableArray+YRJMutableArray.m */,
-				3C53A9A7204FB32A0004D332 /* NSBundle+YRJBundle.h */,
-				3C53A9A8204FB32A0004D332 /* NSBundle+YRJBundle.m */,
-				3C53A9AA204FB3470004D332 /* NSMutableDictionary+YRJMutableDictionary.h */,
-				3C53A9AB204FB3470004D332 /* NSMutableDictionary+YRJMutableDictionary.m */,
-				3C53A9AD204FB3670004D332 /* NSMutableString+YRJMutableString.h */,
-				3C53A9AE204FB3670004D332 /* NSMutableString+YRJMutableString.m */,
-				3C53A9B0204FB39A0004D332 /* NSURL+YRJUrl.h */,
-				3C53A9B1204FB39A0004D332 /* NSURL+YRJUrl.m */,
+				3C53A9B9204FCC420004D332 /* YRJBaseClasses */,
+				3C53A9C5204FCC430004D332 /* YRJDataClasses */,
+				3C53A9BE204FCC430004D332 /* YRJOtherClasses */,
+				3C53A9B8204FCC420004D332 /* YRJViewClasses */,
 			);
 			path = YRJKit;
+			sourceTree = "<group>";
+		};
+		3C53A9B8204FCC420004D332 /* YRJViewClasses */ = {
+			isa = PBXGroup;
+			children = (
+				3C53A9EE204FD7F30004D332 /* UIView+YRJView.h */,
+				3C53A9EF204FD7F30004D332 /* UIView+YRJView.m */,
+			);
+			path = YRJViewClasses;
+			sourceTree = "<group>";
+		};
+		3C53A9B9204FCC420004D332 /* YRJBaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				3C53A9BC204FCC420004D332 /* YRJKit.h */,
+				3C53A9BB204FCC420004D332 /* YRJDefine.h */,
+				3C53A9BD204FCC420004D332 /* NSObject+YRJObject.h */,
+				3C53A9BA204FCC420004D332 /* NSObject+YRJObject.m */,
+			);
+			path = YRJBaseClasses;
+			sourceTree = "<group>";
+		};
+		3C53A9BE204FCC430004D332 /* YRJOtherClasses */ = {
+			isa = PBXGroup;
+			children = (
+				3C53A9C3204FCC430004D332 /* NSBundle+YRJBundle.h */,
+				3C53A9C1204FCC430004D332 /* NSBundle+YRJBundle.m */,
+				3C53A9C4204FCC430004D332 /* NSTimer+YRJTimer.h */,
+				3C53A9C0204FCC430004D332 /* NSTimer+YRJTimer.m */,
+				3C53A9BF204FCC430004D332 /* NSFileManager+YRJFilrManager.m */,
+				3C53A9C2204FCC430004D332 /* NSFileManager+YRJFilrManager.h */,
+			);
+			path = YRJOtherClasses;
+			sourceTree = "<group>";
+		};
+		3C53A9C5204FCC430004D332 /* YRJDataClasses */ = {
+			isa = PBXGroup;
+			children = (
+				3C53A9D0204FCC430004D332 /* NSURL+YRJUrl.h */,
+				3C53A9DD204FCC430004D332 /* NSURL+YRJUrl.m */,
+				3C53A9C6204FCC430004D332 /* NSNumber+YRJNumber.h */,
+				3C53A9D5204FCC430004D332 /* NSNumber+YRJNumber.m */,
+				3C53A9C9204FCC430004D332 /* NSAttributedString+YRJAttributedString.h */,
+				3C53A9D2204FCC430004D332 /* NSAttributedString+YRJAttributedString.m */,
+				3C53A9D4204FCC430004D332 /* NSMutableAttributedString+YRJMutableAttributedString.h */,
+				3C53A9C8204FCC430004D332 /* NSMutableAttributedString+YRJMutableAttributedString.m */,
+				3C53A9D7204FCC430004D332 /* NSMutableArray+YRJMutableArray.h */,
+				3C53A9CA204FCC430004D332 /* NSMutableArray+YRJMutableArray.m */,
+				3C53A9CB204FCC430004D332 /* NSMutableDictionary+YRJMutableDictionary.h */,
+				3C53A9D8204FCC430004D332 /* NSMutableDictionary+YRJMutableDictionary.m */,
+				3C53A9CF204FCC430004D332 /* NSDictionary+YRJDictionary.h */,
+				3C53A9D9204FCC430004D332 /* NSDictionary+YRJDictionary.m */,
+				3C53A9CC204FCC430004D332 /* NSArray+YRJArray.h */,
+				3C53A9D6204FCC430004D332 /* NSArray+YRJArray.m */,
+				3C53A9DB204FCC430004D332 /* NSString+YRJString.h */,
+				3C53A9CD204FCC430004D332 /* NSString+YRJString.m */,
+				3C53A9DA204FCC430004D332 /* NSData+YRJData.h */,
+				3C53A9CE204FCC430004D332 /* NSData+YRJData.m */,
+				3C53A9D1204FCC430004D332 /* NSDate+YRJDate.h */,
+				3C53A9DC204FCC430004D332 /* NSDate+YRJDate.m */,
+				3C53A9F4204FDF2D0004D332 /* UIImage+YRJImage.h */,
+				3C53A9F5204FDF2D0004D332 /* UIImage+YRJImage.m */,
+			);
+			path = YRJDataClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,24 +271,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C53A997204FB28F0004D332 /* NSDictionary+YRJDictionary.m in Sources */,
-				3C53A98E204FB2570004D332 /* NSData+YRJData.m in Sources */,
-				3C53A9A6204FB31A0004D332 /* NSMutableArray+YRJMutableArray.m in Sources */,
-				3C53A9A9204FB32A0004D332 /* NSBundle+YRJBundle.m in Sources */,
-				3C53A9AF204FB3670004D332 /* NSMutableString+YRJMutableString.m in Sources */,
-				3C53A988204F9A310004D332 /* NSArray+YRJArray.m in Sources */,
+				3C53A9ED204FCC430004D332 /* NSURL+YRJUrl.m in Sources */,
+				3C53A9E4204FCC430004D332 /* NSString+YRJString.m in Sources */,
+				3C53A9E0204FCC430004D332 /* NSTimer+YRJTimer.m in Sources */,
+				3C53A9E8204FCC430004D332 /* NSNumber+YRJNumber.m in Sources */,
+				3C53A9E6204FCC430004D332 /* NSAttributedString+YRJAttributedString.m in Sources */,
 				3C53A974204F99970004D332 /* ViewController.m in Sources */,
-				3C53A9AC204FB3470004D332 /* NSMutableDictionary+YRJMutableDictionary.m in Sources */,
+				3C53A9E1204FCC430004D332 /* NSBundle+YRJBundle.m in Sources */,
+				3C53A9EA204FCC430004D332 /* NSMutableDictionary+YRJMutableDictionary.m in Sources */,
 				3C53A97F204F99970004D332 /* main.m in Sources */,
-				3C53A99D204FB2D90004D332 /* NSObject+YRJObject.m in Sources */,
-				3C53A9B2204FB39A0004D332 /* NSURL+YRJUrl.m in Sources */,
-				3C53A9A0204FB2EE0004D332 /* NSNumber+YRJNumber.m in Sources */,
+				3C53A9EC204FCC430004D332 /* NSDate+YRJDate.m in Sources */,
+				3C53A9E2204FCC430004D332 /* NSMutableAttributedString+YRJMutableAttributedString.m in Sources */,
+				3C53A9EB204FCC430004D332 /* NSDictionary+YRJDictionary.m in Sources */,
+				3C53A9DF204FCC430004D332 /* NSFileManager+YRJFilrManager.m in Sources */,
+				3C53A9E3204FCC430004D332 /* NSMutableArray+YRJMutableArray.m in Sources */,
+				3C53A9F0204FD7F30004D332 /* UIView+YRJView.m in Sources */,
+				3C53A9DE204FCC430004D332 /* NSObject+YRJObject.m in Sources */,
+				3C53A9E5204FCC430004D332 /* NSData+YRJData.m in Sources */,
 				3C53A971204F99970004D332 /* AppDelegate.m in Sources */,
-				3C53A98B204FB1A50004D332 /* NSAttributedString+YRJAttributedString.m in Sources */,
-				3C53A99A204FB2B80004D332 /* NSFileManager+YRJFilrManager.m in Sources */,
-				3C53A994204FB27C0004D332 /* NSString+YRJString.m in Sources */,
-				3C53A991204FB26A0004D332 /* NSDate+YRJDate.m in Sources */,
-				3C53A9A3204FB2FF0004D332 /* NSTimer+YRJTimer.m in Sources */,
+				3C53A9F6204FDF2D0004D332 /* UIImage+YRJImage.m in Sources */,
+				3C53A9E9204FCC430004D332 /* NSArray+YRJArray.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
