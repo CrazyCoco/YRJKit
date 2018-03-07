@@ -342,7 +342,7 @@ static UIImage *animatedImageWithAnimatedGIFReleasingImageSource(CGImageSourceRe
     return animatedImageWithAnimatedGIFReleasingImageSource(CGImageSourceCreateWithData(toCF data, NULL));
 }
 
-+ (UIImage *)animatedImageWithAnimatedGIFURL:(NSURL *)url {
++ (UIImage *)yrj_animatedImageWithAnimatedGIFURL:(NSURL *)url {
     return animatedImageWithAnimatedGIFReleasingImageSource(CGImageSourceCreateWithURL(toCF url, NULL));
 }
 
@@ -927,7 +927,7 @@ static UIImage *animatedImageWithAnimatedGIFReleasingImageSource(CGImageSourceRe
 }
 
 /** 水平翻转 */
-- (UIImage *)flipHorizontal
+- (UIImage *)yrj_flipHorizontal
 {
     return [self yrj_rotate:UIImageOrientationUpMirrored];
 }

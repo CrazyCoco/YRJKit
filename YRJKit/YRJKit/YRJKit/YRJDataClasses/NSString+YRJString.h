@@ -635,4 +635,11 @@
  */
 - (BOOL)yrj_regularWithRule:(NSString *)rule;
 
+
+/**
+ 返回一个新的UUID NSString。
+ e.g. "D1178E50-2A4D-4F1F-9BD3-F6AAB00E06B1"
+ */
++ (NSString *)yrj_stringWithUUID;
+
 @end

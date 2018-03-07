@@ -863,4 +863,11 @@ static char yrj_base64EncodingTable[64] = {
     return [stringPredicate evaluateWithObject:self];
 }
 
++ (NSString *)yrj_stringWithUUID {
+    CFUUIDRef uuid = CFUUIDCreate(NULL);
+    CFStringRef string = CFUUIDCreateString(NULL, uuid);
+    CFRelease(uuid);
+    return (__bridge_transfer NSString *)string;
+}
+
 @end

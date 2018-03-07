@@ -30,6 +30,14 @@
 		3C53A9ED204FCC430004D332 /* NSURL+YRJUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9DD204FCC430004D332 /* NSURL+YRJUrl.m */; };
 		3C53A9F0204FD7F30004D332 /* UIView+YRJView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9EF204FD7F30004D332 /* UIView+YRJView.m */; };
 		3C53A9F6204FDF2D0004D332 /* UIImage+YRJImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9F5204FDF2D0004D332 /* UIImage+YRJImage.m */; };
+		3C53A9F9204FE2BC0004D332 /* UIColor+YRJColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9F8204FE2BC0004D332 /* UIColor+YRJColor.m */; };
+		3C53A9FC204FE3370004D332 /* UIButton+YRJButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53A9FB204FE3370004D332 /* UIButton+YRJButton.m */; };
+		3C53AA03204FE62B0004D332 /* UITableView+YRJTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53AA02204FE62B0004D332 /* UITableView+YRJTableView.m */; };
+		3C53AA06204FEBAB0004D332 /* UIScrollView+YRJScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53AA05204FEBAB0004D332 /* UIScrollView+YRJScrollView.m */; };
+		3C53AA09204FEE7D0004D332 /* NSNotificationCenter+YRJNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53AA08204FEE7D0004D332 /* NSNotificationCenter+YRJNotificationCenter.m */; };
+		3C53AA0C204FEF600004D332 /* UIBarButtonItem+YRJBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53AA0B204FEF600004D332 /* UIBarButtonItem+YRJBarButtonItem.m */; };
+		3C53AA12204FF1EE0004D332 /* UIGestureRecognizer+YRJGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53AA11204FF1EE0004D332 /* UIGestureRecognizer+YRJGestureRecognizer.m */; };
+		3C53AA15204FF3B60004D332 /* UIDevice+YRJDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53AA14204FF3B60004D332 /* UIDevice+YRJDevice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +87,22 @@
 		3C53A9EF204FD7F30004D332 /* UIView+YRJView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+YRJView.m"; sourceTree = "<group>"; };
 		3C53A9F4204FDF2D0004D332 /* UIImage+YRJImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+YRJImage.h"; sourceTree = "<group>"; };
 		3C53A9F5204FDF2D0004D332 /* UIImage+YRJImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YRJImage.m"; sourceTree = "<group>"; };
+		3C53A9F7204FE2BC0004D332 /* UIColor+YRJColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+YRJColor.h"; sourceTree = "<group>"; };
+		3C53A9F8204FE2BC0004D332 /* UIColor+YRJColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YRJColor.m"; sourceTree = "<group>"; };
+		3C53A9FA204FE3370004D332 /* UIButton+YRJButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+YRJButton.h"; sourceTree = "<group>"; };
+		3C53A9FB204FE3370004D332 /* UIButton+YRJButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+YRJButton.m"; sourceTree = "<group>"; };
+		3C53AA01204FE62B0004D332 /* UITableView+YRJTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+YRJTableView.h"; sourceTree = "<group>"; };
+		3C53AA02204FE62B0004D332 /* UITableView+YRJTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+YRJTableView.m"; sourceTree = "<group>"; };
+		3C53AA04204FEBAB0004D332 /* UIScrollView+YRJScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+YRJScrollView.h"; sourceTree = "<group>"; };
+		3C53AA05204FEBAB0004D332 /* UIScrollView+YRJScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+YRJScrollView.m"; sourceTree = "<group>"; };
+		3C53AA07204FEE7D0004D332 /* NSNotificationCenter+YRJNotificationCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+YRJNotificationCenter.h"; sourceTree = "<group>"; };
+		3C53AA08204FEE7D0004D332 /* NSNotificationCenter+YRJNotificationCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+YRJNotificationCenter.m"; sourceTree = "<group>"; };
+		3C53AA0A204FEF600004D332 /* UIBarButtonItem+YRJBarButtonItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+YRJBarButtonItem.h"; sourceTree = "<group>"; };
+		3C53AA0B204FEF600004D332 /* UIBarButtonItem+YRJBarButtonItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+YRJBarButtonItem.m"; sourceTree = "<group>"; };
+		3C53AA10204FF1EE0004D332 /* UIGestureRecognizer+YRJGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+YRJGestureRecognizer.h"; sourceTree = "<group>"; };
+		3C53AA11204FF1EE0004D332 /* UIGestureRecognizer+YRJGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+YRJGestureRecognizer.m"; sourceTree = "<group>"; };
+		3C53AA13204FF3B60004D332 /* UIDevice+YRJDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+YRJDevice.h"; sourceTree = "<group>"; };
+		3C53AA14204FF3B60004D332 /* UIDevice+YRJDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+YRJDevice.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +165,14 @@
 			children = (
 				3C53A9EE204FD7F30004D332 /* UIView+YRJView.h */,
 				3C53A9EF204FD7F30004D332 /* UIView+YRJView.m */,
+				3C53A9FA204FE3370004D332 /* UIButton+YRJButton.h */,
+				3C53A9FB204FE3370004D332 /* UIButton+YRJButton.m */,
+				3C53AA01204FE62B0004D332 /* UITableView+YRJTableView.h */,
+				3C53AA02204FE62B0004D332 /* UITableView+YRJTableView.m */,
+				3C53AA04204FEBAB0004D332 /* UIScrollView+YRJScrollView.h */,
+				3C53AA05204FEBAB0004D332 /* UIScrollView+YRJScrollView.m */,
+				3C53AA0A204FEF600004D332 /* UIBarButtonItem+YRJBarButtonItem.h */,
+				3C53AA0B204FEF600004D332 /* UIBarButtonItem+YRJBarButtonItem.m */,
 			);
 			path = YRJViewClasses;
 			sourceTree = "<group>";
@@ -165,6 +197,12 @@
 				3C53A9C0204FCC430004D332 /* NSTimer+YRJTimer.m */,
 				3C53A9BF204FCC430004D332 /* NSFileManager+YRJFilrManager.m */,
 				3C53A9C2204FCC430004D332 /* NSFileManager+YRJFilrManager.h */,
+				3C53AA07204FEE7D0004D332 /* NSNotificationCenter+YRJNotificationCenter.h */,
+				3C53AA08204FEE7D0004D332 /* NSNotificationCenter+YRJNotificationCenter.m */,
+				3C53AA10204FF1EE0004D332 /* UIGestureRecognizer+YRJGestureRecognizer.h */,
+				3C53AA11204FF1EE0004D332 /* UIGestureRecognizer+YRJGestureRecognizer.m */,
+				3C53AA13204FF3B60004D332 /* UIDevice+YRJDevice.h */,
+				3C53AA14204FF3B60004D332 /* UIDevice+YRJDevice.m */,
 			);
 			path = YRJOtherClasses;
 			sourceTree = "<group>";
@@ -196,6 +234,8 @@
 				3C53A9DC204FCC430004D332 /* NSDate+YRJDate.m */,
 				3C53A9F4204FDF2D0004D332 /* UIImage+YRJImage.h */,
 				3C53A9F5204FDF2D0004D332 /* UIImage+YRJImage.m */,
+				3C53A9F7204FE2BC0004D332 /* UIColor+YRJColor.h */,
+				3C53A9F8204FE2BC0004D332 /* UIColor+YRJColor.m */,
 			);
 			path = YRJDataClasses;
 			sourceTree = "<group>";
@@ -272,14 +312,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C53A9ED204FCC430004D332 /* NSURL+YRJUrl.m in Sources */,
+				3C53AA06204FEBAB0004D332 /* UIScrollView+YRJScrollView.m in Sources */,
 				3C53A9E4204FCC430004D332 /* NSString+YRJString.m in Sources */,
 				3C53A9E0204FCC430004D332 /* NSTimer+YRJTimer.m in Sources */,
 				3C53A9E8204FCC430004D332 /* NSNumber+YRJNumber.m in Sources */,
 				3C53A9E6204FCC430004D332 /* NSAttributedString+YRJAttributedString.m in Sources */,
+				3C53AA12204FF1EE0004D332 /* UIGestureRecognizer+YRJGestureRecognizer.m in Sources */,
 				3C53A974204F99970004D332 /* ViewController.m in Sources */,
+				3C53AA03204FE62B0004D332 /* UITableView+YRJTableView.m in Sources */,
+				3C53AA15204FF3B60004D332 /* UIDevice+YRJDevice.m in Sources */,
 				3C53A9E1204FCC430004D332 /* NSBundle+YRJBundle.m in Sources */,
 				3C53A9EA204FCC430004D332 /* NSMutableDictionary+YRJMutableDictionary.m in Sources */,
 				3C53A97F204F99970004D332 /* main.m in Sources */,
+				3C53AA0C204FEF600004D332 /* UIBarButtonItem+YRJBarButtonItem.m in Sources */,
 				3C53A9EC204FCC430004D332 /* NSDate+YRJDate.m in Sources */,
 				3C53A9E2204FCC430004D332 /* NSMutableAttributedString+YRJMutableAttributedString.m in Sources */,
 				3C53A9EB204FCC430004D332 /* NSDictionary+YRJDictionary.m in Sources */,
@@ -287,10 +332,13 @@
 				3C53A9E3204FCC430004D332 /* NSMutableArray+YRJMutableArray.m in Sources */,
 				3C53A9F0204FD7F30004D332 /* UIView+YRJView.m in Sources */,
 				3C53A9DE204FCC430004D332 /* NSObject+YRJObject.m in Sources */,
+				3C53AA09204FEE7D0004D332 /* NSNotificationCenter+YRJNotificationCenter.m in Sources */,
 				3C53A9E5204FCC430004D332 /* NSData+YRJData.m in Sources */,
 				3C53A971204F99970004D332 /* AppDelegate.m in Sources */,
 				3C53A9F6204FDF2D0004D332 /* UIImage+YRJImage.m in Sources */,
 				3C53A9E9204FCC430004D332 /* NSArray+YRJArray.m in Sources */,
+				3C53A9F9204FE2BC0004D332 /* UIColor+YRJColor.m in Sources */,
+				3C53A9FC204FE3370004D332 /* UIButton+YRJButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
