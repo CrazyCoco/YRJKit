@@ -38,6 +38,7 @@
 		3C53AA0C204FEF600004D332 /* UIBarButtonItem+YRJBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53AA0B204FEF600004D332 /* UIBarButtonItem+YRJBarButtonItem.m */; };
 		3C53AA12204FF1EE0004D332 /* UIGestureRecognizer+YRJGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53AA11204FF1EE0004D332 /* UIGestureRecognizer+YRJGestureRecognizer.m */; };
 		3C53AA15204FF3B60004D332 /* UIDevice+YRJDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53AA14204FF3B60004D332 /* UIDevice+YRJDevice.m */; };
+		3C53AA19204FF5F00004D332 /* YRJTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53AA18204FF5F00004D332 /* YRJTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +104,8 @@
 		3C53AA11204FF1EE0004D332 /* UIGestureRecognizer+YRJGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+YRJGestureRecognizer.m"; sourceTree = "<group>"; };
 		3C53AA13204FF3B60004D332 /* UIDevice+YRJDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+YRJDevice.h"; sourceTree = "<group>"; };
 		3C53AA14204FF3B60004D332 /* UIDevice+YRJDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+YRJDevice.m"; sourceTree = "<group>"; };
+		3C53AA17204FF5F00004D332 /* YRJTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YRJTools.h; sourceTree = "<group>"; };
+		3C53AA18204FF5F00004D332 /* YRJTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YRJTools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +155,7 @@
 		3C53A985204F99E30004D332 /* YRJKit */ = {
 			isa = PBXGroup;
 			children = (
+				3C53AA16204FF5D00004D332 /* YRJTools */,
 				3C53A9B9204FCC420004D332 /* YRJBaseClasses */,
 				3C53A9C5204FCC430004D332 /* YRJDataClasses */,
 				3C53A9BE204FCC430004D332 /* YRJOtherClasses */,
@@ -238,6 +242,15 @@
 				3C53A9F8204FE2BC0004D332 /* UIColor+YRJColor.m */,
 			);
 			path = YRJDataClasses;
+			sourceTree = "<group>";
+		};
+		3C53AA16204FF5D00004D332 /* YRJTools */ = {
+			isa = PBXGroup;
+			children = (
+				3C53AA17204FF5F00004D332 /* YRJTools.h */,
+				3C53AA18204FF5F00004D332 /* YRJTools.m */,
+			);
+			path = YRJTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +340,7 @@
 				3C53AA0C204FEF600004D332 /* UIBarButtonItem+YRJBarButtonItem.m in Sources */,
 				3C53A9EC204FCC430004D332 /* NSDate+YRJDate.m in Sources */,
 				3C53A9E2204FCC430004D332 /* NSMutableAttributedString+YRJMutableAttributedString.m in Sources */,
+				3C53AA19204FF5F00004D332 /* YRJTools.m in Sources */,
 				3C53A9EB204FCC430004D332 /* NSDictionary+YRJDictionary.m in Sources */,
 				3C53A9DF204FCC430004D332 /* NSFileManager+YRJFilrManager.m in Sources */,
 				3C53A9E3204FCC430004D332 /* NSMutableArray+YRJMutableArray.m in Sources */,
