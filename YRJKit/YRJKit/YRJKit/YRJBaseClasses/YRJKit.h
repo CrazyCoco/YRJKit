@@ -26,10 +26,7 @@
 #import "NSDictionary+YRJDictionary.h"
 
 #pragma mark - NSFileManager+YRJFileManager
-#import "NSFileManager+YRJFileManager.h"
-
-#pragma mark - NSFileManager+YRJFileManager
-#import "NSFileManager+YRJFileManager.h"
+#import "NSFileManager+YRJFilrManager.h"
 
 #pragma mark - NSMutableArray+YRJMutableArray
 #import "NSMutableArray+YRJMutableArray.h"
@@ -55,6 +52,11 @@
 #pragma mark - NSURL+YRJURL
 #import "NSURL+YRJURL.h"
 
+#pragma mark - YRJTools
+#import "YRJTools.h"
+
+#pragma mark - YRJDefine
+#import "YRJDefine.h"
 
 
 
