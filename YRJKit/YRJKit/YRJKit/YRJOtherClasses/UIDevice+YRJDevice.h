@@ -36,6 +36,10 @@
 /// @see http://theiphonewiki.com/wiki/Models
 @property (nullable, nonatomic, readonly) NSString *machineModel;
 
+/// The device's machine model name. e.g. "iPhone 5s" "iPad mini 2"
+/// @see http://theiphonewiki.com/wiki/Models
+@property (nullable, nonatomic, readonly) NSString *machineModelName;
+
 /// The System's startup time.
 @property (nonatomic, readonly) NSDate * _Nullable systemUptime;
 
