@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface NSArray (YRJArray)
 
 /**
@@ -114,5 +116,13 @@
  */
 - (BOOL)yrj_isHaveObjc:(id _Nullable )obj;
 
+/**
+ 去除数组中重复的对象
+
+ @return return value description
+ */
+- (NSArray *)yrj_removesDuplicate;
 
 @end
+
+NS_ASSUME_NONNULL_END

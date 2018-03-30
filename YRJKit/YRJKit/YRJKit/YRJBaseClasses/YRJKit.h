@@ -10,6 +10,9 @@
 #pragma mark - NSArray+YRJArray
 #import "NSArray+YRJArray.h"
 
+#pragma mark - UIColor+YRJColor
+#import "UIColor+YRJColor.h"
+
 #pragma mark - NSAttributedString+YRJAttributedString
 #import "NSAttributedString+YRJAttributedString.h"
 

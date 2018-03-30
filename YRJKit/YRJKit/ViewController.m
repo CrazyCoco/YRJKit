@@ -20,8 +20,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    self.view.backgroundColor = [UIColor yrj_gradientFromColor:RandomColor toColor:RandomColor withHeight:SCREEN_HEIGHT];
     
-
+//    [YRJTools delay:1 task:^{
+//
+//        UIViewController * rootVC = [UIViewController new];
+//        rootVC.view.backgroundColor = [UIColor redColor];
+//
+//        [YRJTools setRootControllerWithController:rootVC options:UIViewAnimationOptionTransitionCrossDissolve];
+//
+//    }];
+    
+    
     
 }
 

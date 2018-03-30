@@ -143,5 +143,12 @@
     return NO;
 }
 
+- (NSArray *)yrj_removesDuplicate{
+    
+    NSArray * newArr = [self valueForKeyPath:@"@distinctUnionOfObjects.self"];
+    return newArr;
+    
+}
+
 
 @end

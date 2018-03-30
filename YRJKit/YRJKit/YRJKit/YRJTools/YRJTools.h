@@ -15,6 +15,13 @@
 
 #import <Foundation/Foundation.h>
 
+#import <UIKit/UIKit.h>
+
+
+//延时执行回调
+typedef void(^GCDTask)(BOOL cancel);
+typedef void(^GCDBlock)(void);
+
 @interface YRJTools : NSObject
 
 /**
@@ -77,6 +84,129 @@
  */
 + (NSString *)getAgeWithBirthday:(NSString *)birthday;
 
+/**
+ 延时执行任务
+
+ @param time 延时时间
+ @param block 回调
+ @return return value description
+ */
++ (GCDTask)delay:(NSTimeInterval)time task:(GCDBlock)block;
++ (void)cancel:(GCDTask)task;
+
+
+/**
+ 禁止手机睡眠
+ */
++ (void)noMobilePhoneSleep;
+
+
+/**
+ 动画切换window的根控制器
+
+ @param controller 跟视图
+ @param options 动画
+ */
++ (void)setRootControllerWithController:(UIViewController *)controller options:(UIViewAnimationOptions)options;
+
+/**
+ 跳转app权限设置
+ */
++ (void)gotoAppPermissionsSetting;
+
+
+/**
+ 颜色转图片
+
+ @param color 颜色
+ @return 图片
+ */
++ (UIImage *)imageWithColor:(UIColor *)color;
+
+/**
+ 获取window
+
+ @return return value description
+ */
++ (UIWindow *)getWindow;
+
+
+/**
+ 获取app缓存大小
+
+ @return return value description
+ */
++ (CGFloat)getCacheSize;
+
+/**
+ 清除app缓存
+ */
++ (void)cleanCache;
+
+
+/**
+ 检测定位权限
+
+ @return return value description
+ */
++ (BOOL)isHaveLocationPermissions;
+
+/**
+ 检测相机权限
+
+ @return return value description
+ */
++ (BOOL)isHaveCameraPermissions;
+
+/**
+ 检测麦克风权限
+
+ @return return value description
+ */
++ (BOOL)isHaveMicrophonePermissions;
+
+/**
+ 检测相册权限
+
+ @return return value description
+ */
++ (BOOL)isHavePhotoalbumPermissions;
+
+/**
+ 通过图片Data数据第一个字节 来获取图片扩展名
+
+ @param data data description
+ @return return value description
+ */
++ (NSString *)contentTypeForImageData:(NSData *)data;
+
+/**
+ 获取设备Mac地址
+
+ @return return value description
+ */
++ (NSString *)getMacAddress;
+
+/**
+ 获取一个视频的第一帧图片
+
+ @param url url description
+ @return return value description
+ */
++ (UIImage *)getFirstImageWithVideoUrl:(NSURL *)url;
+
+/**
+ 获取视频的时长
+
+ @param urlString urlString description
+ @return return value description
+ */
++ (NSInteger)getVideoTimeByUrlString:(NSURL *)urlString;
+
+/**
+ 让手机震动一下
+ */
++ (void)phoneVibrates;
 
 
 @end

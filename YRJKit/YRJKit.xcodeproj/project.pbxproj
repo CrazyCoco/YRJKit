@@ -39,6 +39,8 @@
 		3C53AA12204FF1EE0004D332 /* UIGestureRecognizer+YRJGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53AA11204FF1EE0004D332 /* UIGestureRecognizer+YRJGestureRecognizer.m */; };
 		3C53AA15204FF3B60004D332 /* UIDevice+YRJDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53AA14204FF3B60004D332 /* UIDevice+YRJDevice.m */; };
 		3C53AA19204FF5F00004D332 /* YRJTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53AA18204FF5F00004D332 /* YRJTools.m */; };
+		3C815E60205222AE00328506 /* UIControl+delay.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C815E5F205222AE00328506 /* UIControl+delay.m */; };
+		3CDE822F206DD4D000AADFFD /* UITextField+YRJTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDE822E206DD4D000AADFFD /* UITextField+YRJTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +108,10 @@
 		3C53AA14204FF3B60004D332 /* UIDevice+YRJDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+YRJDevice.m"; sourceTree = "<group>"; };
 		3C53AA17204FF5F00004D332 /* YRJTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YRJTools.h; sourceTree = "<group>"; };
 		3C53AA18204FF5F00004D332 /* YRJTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YRJTools.m; sourceTree = "<group>"; };
+		3C815E5E205222AE00328506 /* UIControl+delay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+delay.h"; sourceTree = "<group>"; };
+		3C815E5F205222AE00328506 /* UIControl+delay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+delay.m"; sourceTree = "<group>"; };
+		3CDE822D206DD4D000AADFFD /* UITextField+YRJTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+YRJTextField.h"; sourceTree = "<group>"; };
+		3CDE822E206DD4D000AADFFD /* UITextField+YRJTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+YRJTextField.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +183,8 @@
 				3C53AA05204FEBAB0004D332 /* UIScrollView+YRJScrollView.m */,
 				3C53AA0A204FEF600004D332 /* UIBarButtonItem+YRJBarButtonItem.h */,
 				3C53AA0B204FEF600004D332 /* UIBarButtonItem+YRJBarButtonItem.m */,
+				3CDE822D206DD4D000AADFFD /* UITextField+YRJTextField.h */,
+				3CDE822E206DD4D000AADFFD /* UITextField+YRJTextField.m */,
 			);
 			path = YRJViewClasses;
 			sourceTree = "<group>";
@@ -207,6 +215,8 @@
 				3C53AA11204FF1EE0004D332 /* UIGestureRecognizer+YRJGestureRecognizer.m */,
 				3C53AA13204FF3B60004D332 /* UIDevice+YRJDevice.h */,
 				3C53AA14204FF3B60004D332 /* UIDevice+YRJDevice.m */,
+				3C815E5E205222AE00328506 /* UIControl+delay.h */,
+				3C815E5F205222AE00328506 /* UIControl+delay.m */,
 			);
 			path = YRJOtherClasses;
 			sourceTree = "<group>";
@@ -331,6 +341,7 @@
 				3C53A9E8204FCC430004D332 /* NSNumber+YRJNumber.m in Sources */,
 				3C53A9E6204FCC430004D332 /* NSAttributedString+YRJAttributedString.m in Sources */,
 				3C53AA12204FF1EE0004D332 /* UIGestureRecognizer+YRJGestureRecognizer.m in Sources */,
+				3CDE822F206DD4D000AADFFD /* UITextField+YRJTextField.m in Sources */,
 				3C53A974204F99970004D332 /* ViewController.m in Sources */,
 				3C53AA03204FE62B0004D332 /* UITableView+YRJTableView.m in Sources */,
 				3C53AA15204FF3B60004D332 /* UIDevice+YRJDevice.m in Sources */,
@@ -347,6 +358,7 @@
 				3C53A9F0204FD7F30004D332 /* UIView+YRJView.m in Sources */,
 				3C53A9DE204FCC430004D332 /* NSObject+YRJObject.m in Sources */,
 				3C53AA09204FEE7D0004D332 /* NSNotificationCenter+YRJNotificationCenter.m in Sources */,
+				3C815E60205222AE00328506 /* UIControl+delay.m in Sources */,
 				3C53A9E5204FCC430004D332 /* NSData+YRJData.m in Sources */,
 				3C53A971204F99970004D332 /* AppDelegate.m in Sources */,
 				3C53A9F6204FDF2D0004D332 /* UIImage+YRJImage.m in Sources */,

@@ -15,6 +15,15 @@
 
 #import "YRJTools.h"
 
+#import <MapKit/MapKit.h>
+#import <Photos/PHPhotoLibrary.h>
+#import <AVFoundation/AVFoundation.h>
+
+#import <sys/sysctl.h>
+#import <net/if.h>
+#import <net/if_dl.h>
+
+
 @implementation YRJTools
 
 + (NSString *)getDateWithStamp:(NSString *)stamp format:(NSString *)format{
@@ -195,6 +204,280 @@
     return [NSString stringWithFormat:@"%ld",(long)userAge];
     
 }
+
++ (void)after:(NSTimeInterval)time block:(GCDBlock)block {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(time * NSEC_PER_SEC)), dispatch_get_main_queue(), block);
+}
+
++ (GCDTask)delay:(NSTimeInterval)time task:(GCDBlock)block {
+    __block dispatch_block_t closure = block;
+    __block GCDTask result;
+    GCDTask delayedClosure = ^(BOOL cancel){
+        if (closure) {
+            if (!cancel) {
+                dispatch_async(dispatch_get_main_queue(), closure);
+            }
+        }
+        closure = nil;
+        result = nil;
+    };
+    result = delayedClosure;
+    [self after:time block:^{
+        if (result)
+            result(NO);
+    }];
+    
+    return result;
+}
+
+
++ (void)cancel:(GCDTask)task {
+    task(YES);
+}
+
++ (void)noMobilePhoneSleep{
+    [UIApplication sharedApplication].idleTimerDisabled = YES;
+}
+
++ (void)setRootControllerWithController:(UIViewController *)controller options:(UIViewAnimationOptions)options{
+    // options是动画选项
+    [UIView transitionWithView:[UIApplication sharedApplication].keyWindow duration:1.0f options:options animations:^{
+        BOOL oldState = [UIView areAnimationsEnabled];
+        [UIView setAnimationsEnabled:NO];
+        [UIApplication sharedApplication].keyWindow.rootViewController = controller;
+        [UIView setAnimationsEnabled:oldState];
+    } completion:^(BOOL finished) {
+        
+    }];
+    
+}
+
++ (void)gotoAppPermissionsSetting{
+    
+    if (UIApplicationOpenSettingsURLString != NULL) {
+        UIApplication *application = [UIApplication sharedApplication];
+        NSURL *URL = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+        if ([application respondsToSelector:@selector(openURL:options:completionHandler:)]) {
+            [application openURL:URL options:@{}
+               completionHandler:nil];
+        } else {
+            [application openURL:URL];
+        }
+    }
+    
+}
+
+
++ (UIImage *)imageWithColor:(UIColor *)color {
+    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
++ (UIWindow *)getWindow {
+    UIWindow* win = nil; //[UIApplication sharedApplication].keyWindow;
+    for (id item in [UIApplication sharedApplication].windows) {
+        if ([item class] == [UIWindow class]) {
+            if (!((UIWindow*)item).hidden) {
+                win = item;
+                break;
+            }
+        }
+    }
+    return win;
+}
+
++ (CGFloat)getCacheSize{
+    
+    //获取自定义缓存大小
+    //用枚举器遍历 一个文件夹的内容
+    //1.获取 文件夹枚举器
+    NSString *myCachePath = [NSHomeDirectory() stringByAppendingPathComponent:@"Library/Caches"];
+    NSDirectoryEnumerator *enumerator = [[NSFileManager defaultManager] enumeratorAtPath:myCachePath];
+    __block NSUInteger count = 0;
+    //2.遍历
+    for (NSString *fileName in enumerator) {
+        NSString *path = [myCachePath stringByAppendingPathComponent:fileName];
+        NSDictionary *fileDict = [[NSFileManager defaultManager] attributesOfItemAtPath:path error:nil];
+        count += fileDict.fileSize;//自定义所有缓存大小
+    }
+    // 得到是字节  转化为M
+    CGFloat totalSize = ((CGFloat)count)/1024/1024;
+    return totalSize;
+    
+}
+
++ (void)cleanCache{
+    
+    NSString *myCachePath = [NSHomeDirectory() stringByAppendingPathComponent:@"Library/Caches"];
+    [[NSFileManager defaultManager] removeItemAtPath:myCachePath error:nil];
+    
+}
+
+
++ (BOOL)isHaveLocationPermissions{
+    
+    if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusDenied) {
+        NSLog(@"没有定位权限");
+        return NO;
+    }
+    
+    return YES;
+}
+
+
++ (BOOL)isHaveCameraPermissions{
+    
+    AVAuthorizationStatus statusVideo = [AVCaptureDevice  authorizationStatusForMediaType:AVMediaTypeVideo];
+    if (statusVideo == AVAuthorizationStatusDenied) {
+        NSLog(@"没有摄像头权限");
+        return NO;
+    }
+
+    return YES;
+}
+
++ (BOOL)isHaveMicrophonePermissions{
+
+    //是否有麦克风权限
+    AVAuthorizationStatus statusAudio = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeAudio];
+    if (statusAudio == AVAuthorizationStatusDenied) {
+        NSLog(@"没有录音权限");
+        return NO;
+    }
+
+    return YES;
+}
+
++ (BOOL)isHavePhotoalbumPermissions{
+
+    PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
+    if (status == PHAuthorizationStatusRestricted ||
+        status == PHAuthorizationStatusDenied) {
+        return NO;
+    }
+    return YES;
+    
+}
+
+
+//通过图片Data数据第一个字节 来获取图片扩展名
++ (NSString *)contentTypeForImageData:(NSData *)data
+{
+    uint8_t c;
+    [data getBytes:&c length:1];
+    switch (c)
+    {
+        case 0xFF:
+            return @"jpeg";
+            
+        case 0x89:
+            return @"png";
+            
+        case 0x47:
+            return @"gif";
+            
+        case 0x49:
+        case 0x4D:
+            return @"tiff";
+            
+        case 0x52:
+            if ([data length] < 12) {
+                return nil;
+            }
+            
+            NSString *testString = [[NSString alloc] initWithData:[data subdataWithRange:NSMakeRange(0, 12)] encoding:NSASCIIStringEncoding];
+            if ([testString hasPrefix:@"RIFF"]
+                && [testString hasSuffix:@"WEBP"])
+            {
+                return @"webp";
+            }
+            
+            return nil;
+    }
+    
+    return nil;
+}
+
++ (NSString *)getMacAddress{
+    int                 mib[6];
+    size_t              len;
+    char                *buf;
+    unsigned char       *ptr;
+    struct if_msghdr    *ifm;
+    struct sockaddr_dl  *sdl;
+    
+    mib[0] = CTL_NET;
+    mib[1] = AF_ROUTE;
+    mib[2] = 0;
+    mib[3] = AF_LINK;
+    mib[4] = NET_RT_IFLIST;
+    
+    if((mib[5] = if_nametoindex("en0")) == 0) {
+        printf("Error: if_nametoindex error\n");
+        return NULL;
+    }
+    
+    if(sysctl(mib, 6, NULL, &len, NULL, 0) < 0) {
+        printf("Error: sysctl, take 1\n");
+        return NULL;
+    }
+    
+    if((buf = malloc(len)) == NULL) {
+        printf("Could not allocate memory. Rrror!\n");
+        return NULL;
+    }
+    
+    if(sysctl(mib, 6, buf, &len, NULL, 0) < 0) {
+        printf("Error: sysctl, take 2");
+        return NULL;
+    }
+    
+    ifm = (struct if_msghdr *)buf;
+    sdl = (struct sockaddr_dl *)(ifm + 1);
+    ptr = (unsigned char *)LLADDR(sdl);
+    NSString *outstring = [NSString stringWithFormat:@"%02X:%02X:%02X:%02X:%02X:%02X",
+                           *ptr, *(ptr+1), *(ptr+2), *(ptr+3), *(ptr+4), *(ptr+5)];
+    free(buf);
+    
+    return outstring;
+}
+
++ (UIImage *)getFirstImageWithVideoUrl:(NSURL *)url{
+    
+    AVURLAsset *asset1 = [[AVURLAsset alloc] initWithURL:url options:nil];
+    AVAssetImageGenerator *generate1 = [[AVAssetImageGenerator alloc] initWithAsset:asset1];
+    generate1.appliesPreferredTrackTransform = YES;
+    NSError *err = NULL;
+    CMTime time = CMTimeMake(1, 2);
+    CGImageRef oneRef = [generate1 copyCGImageAtTime:time actualTime:NULL error:&err];
+    UIImage *one = [[UIImage alloc] initWithCGImage:oneRef];
+    
+    return one;
+    
+}
+
+
++ (NSInteger)getVideoTimeByUrlString:(NSURL *)urlString {
+    
+    AVURLAsset *avUrl = [AVURLAsset assetWithURL:urlString];
+    CMTime time = [avUrl duration];
+    int seconds = ceil(time.value/time.timescale);
+    return seconds;
+}
+
++ (void)phoneVibrates{
+    AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
+}
+
 
 
 @end

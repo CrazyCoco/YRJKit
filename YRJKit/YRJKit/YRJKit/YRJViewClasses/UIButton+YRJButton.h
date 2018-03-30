@@ -10,6 +10,8 @@
 
 typedef void (^TouchedButtonBlock)(void);
 
+//@property (nonatomic, assign) NSTimeInterval yrj_acceptEventInterval; // 重复点击的间隔
+
 @interface UIButton (YRJButton)
 
 //快速创建按钮

@@ -11,6 +11,31 @@
 #define WEAK_SELF(type)  __weak __typeof(&*self)weakSelf = self
 #define STRONG_SELF(type)  __strong __typeof(&*self)weakSelf = self
 
+// app名称
+#define APP_NAME [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
+
+// app版本
+#define APP_VERSION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+
+//app build版本
+#define APP_BUILD [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
+
+//手机序列号
+#define PHONE_IDENTIFIERNUMBER [[UIDevice currentDevice] uniqueIdentifier];
+
+//手机别名： 用户定义的名称
+#define PHONE_NAME [[UIDevice currentDevice] name];
+
+//设备名称
+#define PHONE_DEVICENAME [[UIDevice currentDevice] systemName];
+
+//手机系统版本
+#define PHONE_VERSION [[UIDevice currentDevice] systemVersion];
+
+//手机型号
+#define PHONE_MODEL [[UIDevice currentDevice] model];
+
+
 //屏幕宽度
 #define SCREEN_WIDTH \
 ([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)] ? [UIScreen mainScreen].nativeBounds.size.width/[UIScreen mainScreen].nativeScale : [UIScreen mainScreen].bounds.size.width)
@@ -51,6 +76,9 @@ blue:((float)(rgbValue & 0xFF)) / 255.0 alpha:1.0]
 
 //UserDefaults
 #define USERDEFAULT  [NSUserDefaults standardUserDefaults]
+
+//删除NSUserDefaults所有记录
+#define DELETEALLUSERDEFAULTS [[NSUserDefaults standardUserDefaults] setPersistentDomain:[NSDictionary dictionary] forName:[[NSBundle mainBundle] bundleIdentifier]];
 
 //NSNotificationCenter
 #define NOTIFICATIONCENTER  [NSNotificationCenter defaultCenter]
@@ -98,8 +126,22 @@ blue:((float)(rgbValue & 0xFF)) / 255.0 alpha:1.0]
 //获取沙盒Cache路径
 #define CACHE_PATH [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
 
+//隐藏键盘
+#define KEYBOARD_CANCLE [[[[UIApplication sharedApplication] delegate ]window]  endEditing:YES]
 
 #define YRJ_GET_METHOD_RETURN_OBJC(objc) if (objc) return objc
+
+//GCD代码只执行一次
+#define DISPATCH_ONCE_BLOCK(onceBlock) static dispatch_once_t onceToken; dispatch_once(&onceToken, onceBlock);
+
+//在主线程上运行
+#define DISPATCH_MAIN_THREAD(mainQueueBlock) dispatch_async(dispatch_get_main_queue(), mainQueueBlock);
+
+//开启异步线程
+#define DISPATCH_GLOBAL_QUEUE_DEFAULT(globalQueueBlock) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), globalQueueBlocl);
+
+//FORMAT
+#define FORMAT(f, ...)      [NSString stringWithFormat:f, ## __VA_ARGS__]
 
 
 #ifdef DEBUG
