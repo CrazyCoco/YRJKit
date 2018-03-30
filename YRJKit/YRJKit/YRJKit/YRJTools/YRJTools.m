@@ -474,9 +474,150 @@
     return seconds;
 }
 
+
 + (void)phoneVibrates{
     AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
 }
+
+
+/**
+ 生成二维码
+ 
+ @param codeString 二维码客串
+ @return 二维码图片
+ */
++ (UIImage *)qrCodeWithString:(NSString *)codeString{
+    
+    // 1.创建过滤器
+    CIFilter *filter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
+    // 2.恢复默认
+    [filter setDefaults];
+    // 3.给过滤器添加数据
+    NSString *dataString = codeString;
+    NSData *data = [dataString dataUsingEncoding:NSUTF8StringEncoding];
+    [filter setValue:data forKeyPath:@"inputMessage"];
+    // 4.获取输出的二维码
+    CIImage *outputImage = [filter outputImage];
+    // 5.将CIImage转换成UIImage，并放大显示
+    return [self createNonInterpolatedUIImageFormCIImage:outputImage withSize:400];
+}
+
+/**
+ 根据CIImage生成指定大小的UIImage
+ 
+ @param image CIImage
+ @param size 图片宽度
+ */
++ (UIImage *)createNonInterpolatedUIImageFormCIImage:(CIImage *)image withSize:(CGFloat)size {
+    
+    CGRect extent = CGRectIntegral(image.extent);
+    CGFloat scale = MIN(size/CGRectGetWidth(extent), size/CGRectGetHeight(extent));
+    // 1.创建bitmap;
+    size_t width = CGRectGetWidth(extent) * scale;
+    size_t height = CGRectGetHeight(extent) * scale;
+    CGColorSpaceRef cs = CGColorSpaceCreateDeviceGray();
+    CGContextRef bitmapRef = CGBitmapContextCreate(nil, width, height, 8, 0, cs, (CGBitmapInfo)kCGImageAlphaNone);
+    CIContext *context = [CIContext contextWithOptions:nil];
+    CGImageRef bitmapImage = [context createCGImage:image fromRect:extent];
+    CGContextSetInterpolationQuality(bitmapRef, kCGInterpolationNone);
+    CGContextScaleCTM(bitmapRef, scale, scale);
+    CGContextDrawImage(bitmapRef, extent, bitmapImage);
+    // 2.保存bitmap到图片
+    CGImageRef scaledImage = CGBitmapContextCreateImage(bitmapRef);
+    CGContextRelease(bitmapRef);
+    CGImageRelease(bitmapImage);
+    return [UIImage imageWithCGImage:scaledImage];
+}
+
+
++ (NSInteger)getDaysWithYear:(NSInteger)year
+                       month:(NSInteger)month{
+    
+    switch (month) {
+        case 1:
+            return 31;
+            break;
+        case 2:
+            if (year%400==0 || (year%100!=0 && year%4 == 0)) {
+                return 29;
+            }else{
+                return 28;
+            }
+            break;
+        case 3:
+            return 31;
+            break;
+        case 4:
+            return 30;
+            break;
+        case 5:
+            return 31;
+            break;
+        case 6:
+            return 30;
+            break;
+        case 7:
+            return 31;
+            break;
+        case 8:
+            return 31;
+            break;
+        case 9:
+            return 30;
+            break;
+        case 10:
+            return 31;
+            break;
+        case 11:
+            return 30;
+            break;
+        case 12:
+            return 31;
+            break;
+        default:
+            return 0;
+            break;
+    }
+}
+
+/**
+ 车牌校验
+ 
+ @return 是/否
+ */
+- (BOOL)isCarLicenceNumWithString:(NSString *)str{
+    
+    if (str.length == 7 || str.length == 8) {
+        
+        NSString *carRegex = @"^[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}[A-Z0-9]{4}[A-Z0-9挂学警港澳]{1}$";
+        NSPredicate *carTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",carRegex];
+        return [carTest evaluateWithObject:str];
+    }else{
+        return NO;
+    }
+}
+
+- (CGFloat)getNumWithArr:(NSArray *)arr type:(NumType)type{
+    
+    switch (type) {
+        case sum:
+            return [[arr valueForKeyPath:@"@sum.floatValue"] floatValue];
+            break;
+        case avg:
+            return [[arr valueForKeyPath:@"@avg.floatValue"] floatValue];
+            break;
+        case min:
+            return [[arr valueForKeyPath:@"@min.floatValue"] floatValue];
+            break;
+        case max:
+            return [[arr valueForKeyPath:@"@max.floatValue"] floatValue];
+            break;
+        default:
+            break;
+    }
+    
+}
+
 
 
 

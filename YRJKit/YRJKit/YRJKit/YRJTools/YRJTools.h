@@ -17,6 +17,13 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum : NSUInteger {
+    sum, //和
+    avg, //平均值
+    max, //最大值
+    min, //最小值
+} NumType;
+
 
 //延时执行回调
 typedef void(^GCDTask)(BOOL cancel);
@@ -207,6 +214,43 @@ typedef void(^GCDBlock)(void);
  让手机震动一下
  */
 + (void)phoneVibrates;
+
+/**
+ 生成二维码
+ 
+ @param codeString 二维码客串
+ @return 二维码图片
+ */
++ (UIImage *)qrCodeWithString:(NSString *)codeString;
+
+/**
+ 根据年和月返回当月天数
+
+ @param year year description
+ @param month month description
+ @return return value description
+ */
++ (NSInteger)getDaysWithYear:(NSInteger)year
+                       month:(NSInteger)month;
+
+/**
+ 车牌校验
+ 
+ @return 是/否
+ */
+- (BOOL)isCarLicenceNumWithString:(NSString *)str;
+
+
+/**
+ 快速求和，最大值，最小值，平均值
+
+ @param arr arr description
+ @param type type description
+ @return return value description
+ */
+- (CGFloat)getNumWithArr:(NSArray *)arr type:(NumType)type;
+
+
 
 
 @end
