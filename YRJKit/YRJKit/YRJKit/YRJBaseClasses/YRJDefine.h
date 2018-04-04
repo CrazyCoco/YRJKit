@@ -48,6 +48,11 @@
 #define SCREEN_SIZE \
 ([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)] ? CGSizeMake([UIScreen mainScreen].nativeBounds.size.width/[UIScreen mainScreen].nativeScale,[UIScreen mainScreen].nativeBounds.size.height/[UIScreen mainScreen].nativeScale) : [UIScreen mainScreen].bounds.size)
 
+//NavBar高度
+#define  STATUSBAR_HEIGHT  [[UIApplication sharedApplication] statusBarFrame].size.height
+#define NAVIGATIONBAR_HEIGHT 44
+#define NAVIGATION_HEIGHT STATUSBAR_HEIGHT+NAVIGATIONBAR_HEIGHT
+
 // View 圆角和加边框
 #define VIEW_BORDER_RADIUS(View, Radius, Width, Color)\
 \
